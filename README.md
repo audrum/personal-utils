@@ -16,4 +16,6 @@ Then execute the script with the command:
 python3 cursor_move.py
 ```
 
+For stoppign just press Ctrl + C
+
 Any suggestions just reach out to me on [@audrum](https://t.me/audrum)
