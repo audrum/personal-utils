@@ -4,19 +4,23 @@ This small script moves the cursor 1 pixel every 60 seconds just to keep your op
 
 ## How to use
 
-First install [Python](https://www.python.org/downloads/).
+1. Install [Python](https://www.python.org/downloads/) (In case you do not have it already).
 
-Once it is installed, install [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) with the command:
+2. Install [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) using the command:
 
 ```Python
 pip3 install pyautogui
 ```
-You can set an specific time to stop editing [line 8](https://github.com/audrum/personal-utils/blob/f01de5577f0f953f8f7c4eebf4e7f4a276057511/cursor_move.py#L8) (24 hour format)
-
-Then execute the script with the command:
+3. Then execute the script with the command:
 
 ```
-python3 cursor_move.py
+python3 cursor_mover.py
+```
+
+If you want to set a time to stop, use the argument _-t_ followed by the time in 24-hour format, example:
+
+```
+python3 cursor_mover.py -t 13:00
 ```
 
 For manual stopping just press Ctrl + C
