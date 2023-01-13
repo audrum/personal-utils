@@ -11,7 +11,7 @@ Once it is installed, install [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) w
 ```Python
 pip3 install pyautogui
 ```
-You can change the time that you want to stop editing [line 8](https://github.com/audrum/personal-utils/blob/f01de5577f0f953f8f7c4eebf4e7f4a276057511/cursor_move.py#L8)
+You can set an specific time to stop editing [line 8](https://github.com/audrum/personal-utils/blob/f01de5577f0f953f8f7c4eebf4e7f4a276057511/cursor_move.py#L8) (24 hour format)
 
 Then execute the script with the command:
 
