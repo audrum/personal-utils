@@ -5,15 +5,16 @@ import time
 import argparse
 
 def move_cursor_time(set_time):
+    print(f"This will stop at {set_time}")
     while True:
-        now = time.strftime('%H:%M:%S', time.localtime())
-        if now >= set_time:
-            print(f"Stopped! Now is: {now}")
-            break
         for i in range(-1, 2, 2):
+            now = time.strftime('%H:%M:%S', time.localtime())
             pyautogui.move(i, i)
             print(f"Time: {now} -- Position: {pyautogui.position()}")
             time.sleep(60)
+        if now == set_time:
+            print(f"Stopped! Now is: {now}")
+            break
 
 def move_cursor():
     while True:
